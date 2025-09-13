@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God's Grace Hairline - Crowning You With Confidence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Add a subtle grain texture for a premium feel */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXVpaWl9fX14eHh/f39wcHBvb29FRUVGRkZISEhJSUlKSlJ6enp5eXlQUFBMTExOTk5SUlJWVlZcXFxdXV3IZ6fUAAAAMXRSTlMA+wL4/f7+4Qf2/f379/v28fH28PDw7+7u7e3s7Ozr6urq6urn5uZm5QAAAStJREFUeNpiYGBgEExgYGAgVgdjYFCBf3+AQAogBvoLhKIXoAMgVgK2ZqLgP4G4D6i5mB2Mgb2gqH8g3gTqAmYnaGAsWCr4H8idQL2AnZ2gIeCAs28IZsFrA/kboOJgt4JkgRgf2DUEC3IDeDyoE4kFAnYvUAn4YJk4FQj5g8D2AbwzQTUQ2g6ANkC8F1E7ED0E6UHwD0D3A/kdoDkA6QE2gBwL5A5A/iDoM4geAekB7IEQ/AbQ/AEyB/A3QPwPyBcA/wG0B8geAPgP0A8gfwL8D9A/oNwB8B9A/ID8A/A/QP6B/AFyB/A/QP4D8gfgf0D+A/IHYH8A/gHyB+B/QP4D8gfgf0D+A/IHYH8A/gHyB+B/QP4D8gdkANmhHd6w4P/7gIAAQAlbwME5f4sAAAAASUVORK5CYII=');
+            opacity: 0.04;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1), transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .fade-in-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-text {
+            --clip-path: inset(0 100% 0 0);
+            clip-path: var(--clip-path);
+            transition: clip-path 1s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .reveal-text.is-visible {
+            --clip-path: inset(0 0 0 0);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-mauve': '#5C455B',
+                        'lustrous-gold': '#C0954A', /* A softer, more sophisticated gold */
+                        'warm-cream': '#F7F5F2',
+                        'charcoal-grey': '#333333', /* Darker charcoal for better contrast */
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-warm-cream font-sans text-charcoal-grey antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-transparent text-white fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-5">
+            <div class="flex justify-between items-center">
+                <a href="#">
+                    <img src="https://i.postimg.cc/fTNR9wCv/Black-White-Minimalist-Initials-Monogram-Jewelry-Logo-20250912-181318-0000.png" alt="God's Grace Hairline Logo" class="h-14 w-auto brightness-0 invert">
+                </a>
+                <nav class="hidden md:flex items-center space-x-10">
+                    <a href="#" class="tracking-wider uppercase text-xs font-semibold hover:text-opacity-80 transition-opacity duration-300">Shop</a>
+                    <a href="#" class="tracking-wider uppercase text-xs font-semibold hover:text-opacity-80 transition-opacity duration-300">Our Story</a>
+                    <a href="#" class="tracking-wider uppercase text-xs font-semibold hover:text-opacity-80 transition-opacity duration-300">Consultation</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-deep-mauve h-screen">
+            <div class="flex flex-col items-center justify-center h-full space-y-8">
+                 <a href="#" class="text-2xl font-serif text-warm-cream hover:text-opacity-80 transition-opacity duration-300">Shop</a>
+                 <a href="#" class="text-2xl font-serif text-warm-cream hover:text-opacity-80 transition-opacity duration-300">Our Story</a>
+                 <a href="#" class="text-2xl font-serif text-warm-cream hover:text-opacity-80 transition-opacity duration-300">Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden bg-deep-mauve">
+            <div class="container mx-auto px-6 relative z-20 text-center text-white">
+                <div class="overflow-hidden">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif italic reveal-text">Wear Your Grace.</h1>
+                </div>
+                 <div class="overflow-hidden mt-4">
+                    <p class="text-lg md:text-xl max-w-2xl mx-auto font-light reveal-text" style="transition-delay: 200ms;">Crowning you with the confidence to be unapologetically yourself.</p>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 text-white animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- Mission Statement -->
+        <section class="py-24 md:py-32 bg-warm-cream">
+            <div class="container mx-auto px-6 text-center">
+                <p class="text-2xl md:text-4xl font-serif max-w-4xl mx-auto leading-relaxed text-charcoal-grey/80 fade-in-up">
+                    We believe beauty is an inner light. Our mission is to provide the means to let it shine, especially during times of uncertainty. We don’t just sell wigs; <span class="italic text-deep-mauve">we restore a sense of self.</span>
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Featured Collection -->
+        <section class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-left mb-16 fade-in-up">
+                    <h2 class="text-4xl md:text-5xl font-serif text-deep-mauve">The Signature Collection</h2>
+                    <p class="text-lg text-charcoal-grey mt-2">Curated styles, crafted for an undetectable feel and timeless look.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                    <!-- Product Card 1 -->
+                    <div class="text-center fade-in-up">
+                        <div class="bg-warm-cream p-4 rounded-lg shadow-lg mb-6 group overflow-hidden">
+                           <img src="https://images.unsplash.com/photo-1610482813945-36b0b2b85191?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3" 
+                                onerror="this.onerror=null;this.src='https://placehold.co/800x1000/F5F3ED/5C455B?text=Ethereal+Waves';"
+                                alt="Long, wavy brown wig with highlights on a mannequin" class="w-full h-auto object-cover rounded-md transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-2xl font-serif text-deep-mauve">Ethereal Waves</h3>
+                        <p class="mt-2 text-lg font-semibold text-lustrous-gold">$450</p>
+                        <a href="#" class="inline-block mt-4 bg-lustrous-gold text-white font-semibold text-sm px-8 py-3 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">View Style</a>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="text-center fade-in-up" style="transition-delay: 150ms;">
+                        <div class="bg-warm-cream p-4 rounded-lg shadow-lg mb-6 group overflow-hidden">
+                           <img src="https://images.unsplash.com/photo-1621602419530-e8e6389710f2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3" 
+                                onerror="this.onerror=null;this.src='https://placehold.co/800x1000/F5F3ED/5C455B?text=The+Sleek+Bob';"
+                                alt="Sleek, straight black bob wig on a mannequin" class="w-full h-auto object-cover rounded-md transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-2xl font-serif text-deep-mauve">The Sleek Bob</h3>
+                        <p class="mt-2 text-lg font-semibold text-lustrous-gold">$320</p>
+                         <a href="#" class="inline-block mt-4 bg-lustrous-gold text-white font-semibold text-sm px-8 py-3 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">View Style</a>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="text-center fade-in-up" style="transition-delay: 300ms;">
+                        <div class="bg-warm-cream p-4 rounded-lg shadow-lg mb-6 group overflow-hidden">
+                           <img src="https://images.unsplash.com/photo-1617183294191-38321e98586c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3" 
+                                onerror="this.onerror=null;this.src='https://placehold.co/800x1000/F5F3ED/5C455B?text=Radiant+Curls';"
+                                alt="Voluminous curly blonde wig on a mannequin" class="w-full h-auto object-cover rounded-md transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-2xl font-serif text-deep-mauve">Radiant Curls</h3>
+                        <p class="mt-2 text-lg font-semibold text-lustrous-gold">$480</p>
+                         <a href="#" class="inline-block mt-4 bg-lustrous-gold text-white font-semibold text-sm px-8 py-3 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">View Style</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Brand Pillars - Bento Grid -->
+        <section class="py-20 md:py-28 bg-warm-cream">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-1 p-8 md:p-12 bg-deep-mauve text-warm-cream rounded-lg fade-in-up">
+                        <h3 class="text-3xl font-serif mb-4">The Art of Confidence</h3>
+                        <p class="text-warm-cream/80 leading-relaxed">Our philosophy is simple: create pieces that empower you to feel like the best version of yourself.</p>
+                    </div>
+                    <div class="p-8 md:p-12 bg-white rounded-lg flex flex-col justify-center fade-in-up" style="transition-delay: 150ms;">
+                        <h4 class="text-2xl font-serif text-deep-mauve mb-2">Unmatched Quality</h4>
+                        <p class="text-charcoal-grey">Sourced from the finest materials for a look and feel that is simply unparalleled.</p>
+                    </div>
+                    <div class="p-8 md:p-12 bg-white rounded-lg flex flex-col justify-center fade-in-up" style="transition-delay: 300ms;">
+                        <h4 class="text-2xl font-serif text-deep-mauve mb-2">Natural Appearance</h4>
+                        <p class="text-charcoal-grey">Invisible hairlines and multi-tonal colors that mimic the beauty of natural hair.</p>
+                    </div>
+                     <div class="p-8 md:p-12 bg-white rounded-lg flex flex-col justify-center fade-in-up">
+                        <h4 class="text-2xl font-serif text-deep-mauve mb-2">All-Day Comfort</h4>
+                        <p class="text-charcoal-grey">Lightweight, breathable caps designed for a secure and comfortable fit, from morning to night.</p>
+                    </div>
+                    <div class="lg:col-span-2 p-8 md:p-12 bg-lustrous-gold text-white rounded-lg flex flex-col justify-center fade-in-up" style="transition-delay: 150ms;">
+                        <h4 class="text-2xl font-serif mb-2">Empathetic Service</h4>
+                        <p>Book a complimentary, discreet virtual consultation with our specialists to find your perfect match. We are here for you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-20 md:py-28 bg-white">
+             <div class="container mx-auto px-6 text-center">
+                 <div class="max-w-3xl mx-auto">
+                    <div class="fade-in-up">
+                        <p class="text-3xl md:text-5xl font-serif italic text-charcoal-grey/70 leading-tight">
+                            "For the first time in years, I saw <span class="text-deep-mauve">myself</span> in the mirror again. The quality is incredible. Thank you, God's Grace."
+                        </p>
+                        <p class="mt-8 font-semibold text-lustrous-gold text-lg">- Sarah J.</p>
+                    </div>
+                 </div>
+             </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="bg-charcoal-grey text-warm-cream">
+            <div class="container mx-auto px-6 py-20">
+                <div class="text-center mb-12">
+                     <h3 class="text-3xl font-serif mb-4">Join The Community</h3>
+                     <p class="max-w-xl mx-auto text-warm-cream/70">Subscribe for heartfelt stories, new arrivals, and exclusive offers.</p>
+                     <form class="mt-8 max-w-lg mx-auto flex">
+                         <input type="email" placeholder="Your email address" class="flex-grow bg-warm-cream/10 text-white placeholder-warm-cream/50 px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-lustrous-gold transition-all">
+                         <button type="submit" class="bg-lustrous-gold text-white font-semibold px-6 py-3 rounded-r-md hover:bg-opacity-90 transition-colors">Subscribe</button>
+                     </form>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-warm-cream/20 pt-12">
+                    <div class="text-center md:text-left">
+                        <h4 class="font-bold mb-4 tracking-wider uppercase text-sm">Explore</h4>
+                        <ul class="space-y-2 text-warm-cream/70">
+                            <li><a href="#" class="hover:text-lustrous-gold transition-colors">Shop All</a></li>
+                            <li><a href="#" class="hover:text-lustrous-gold transition-colors">Our Story</a></li>
+                            <li><a href="#" class="hover:text-lustrous-gold transition-colors">Consultation</a></li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                         <h4 class="font-bold mb-4 tracking-wider uppercase text-sm">Support</h4>
+                        <ul class="space-y-2 text-warm-cream/70">
+                            <li><a href="#" class="hover:text-lustrous-gold transition-colors">Resources & Care</a></li>
+                            <li><a href="#" class="hover:text-lustrous-gold transition-colors">Contact Us</a></li>
+                            <li><a href="#" class="hover:text-lustrous-gold transition-colors">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="text-center md:text-right">
+                         <h4 class="font-bold mb-4 tracking-wider uppercase text-sm">Follow Us</h4>
+                         <div class="flex space-x-4 justify-center md:justify-end">
+                            <a href="#" class="hover:text-lustrous-gold transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                            </a>
+                            <a href="#" class="hover:text-lustrous-gold transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.645-.07-4.85s.012-3.585.07-4.85c.148-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 border-t border-warm-cream/20 pt-8 text-center text-warm-cream/50">
+                    <p>&copy; 2025 God's Grace Hairline. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const header = document.getElementById('header');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Animations on scroll
+        const animatedEls = document.querySelectorAll('.fade-in-up, .reveal-text');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedEls.forEach(el => observer.observe(el));
+        
+        // Trigger reveal text for hero section after load
+        window.addEventListener('load', () => {
+             setTimeout(() => {
+                const heroTexts = document.querySelectorAll('.reveal-text');
+                // Only trigger the ones in the hero section on load
+                const heroSection = document.querySelector('.bg-deep-mauve');
+                const heroTextElements = heroSection.querySelectorAll('.reveal-text');
+                heroTextElements.forEach(text => text.classList.add('is-visible'));
+             }, 300);
+        });
+
+        // Header style change on scroll
+        const pageHeader = document.getElementById('header');
+        const headerLogo = pageHeader.querySelector('img');
+        const headerLinks = pageHeader.querySelectorAll('nav a');
+        const mobileButton = pageHeader.querySelector('#mobile-menu-button');
+
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    pageHeader.classList.add('bg-warm-cream/80', 'shadow-md');
+                    pageHeader.classList.remove('bg-transparent', 'text-white');
+                    pageHeader.classList.add('text-charcoal-grey');
+                    headerLogo.classList.remove('brightness-0', 'invert');
+                    headerLogo.classList.add('mix-blend-multiply');
+                    headerLinks.forEach(link => link.classList.add('text-charcoal-grey'));
+                    mobileButton.classList.add('text-deep-mauve');
+
+                } else {
+                    pageHeader.classList.remove('bg-warm-cream/80', 'shadow-md');
+                    pageHeader.classList.add('bg-transparent', 'text-white');
+                    pageHeader.classList.remove('text-charcoal-grey');
+                    headerLogo.classList.add('brightness-0', 'invert');
+                    headerLogo.classList.remove('mix-blend-multiply');
+                    headerLinks.forEach(link => link.classList.remove('text-charcoal-grey'));
+                    mobileButton.classList.remove('text-deep-mauve');
+                }
+            });
+        }, { threshold: 0.5 }); // threshold of 0.5 means it triggers when 50% of the element is out of view
+
+        scrollObserver.observe(document.querySelector('.bg-deep-mauve'));
+
+    </script>
+</body>
+</html>
+
